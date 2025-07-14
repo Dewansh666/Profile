@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #222;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4dabf7;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: #4dabf7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #339af0;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* 🌙 Dark Mode */
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+body.dark .container {
+  background: #2c2c2c;
+}
+
+body.dark input {
+  background: #333;
+  color: #eee;
+  border-color: #555;
+}
+
+body.dark input:focus {
+  border-color: #64b5f6;
+}
+
+body.dark button[type="submit"] {
+  background: #64b5f6;
+  color: #000;
+}
+
+body.dark button[type="submit"]:hover {
+  background: #42a5f5;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+#theme-toggle:hover {
+  transform: scale(1.2);
+}
+.container {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* ← this adds "lift" */
+  transition: background 0.3s;
+}
+body {
+  font-family: 'Inter', sans-serif;
+}
+input {
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #4dabf7; /* Light blue when active */
+}
+button[type="submit"] {
+  background: #4dabf7;
+  border-radius: 12px;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #339af0;
+}
